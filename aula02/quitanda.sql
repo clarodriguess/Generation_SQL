@@ -1,5 +1,7 @@
 CREATE DATABASE db_quitanda;
 
+
+
 CREATE TABLE tb_produtos(
 	id bigint AUTO_INCREMENT,
     nome varchar(255) NOT NULL,
