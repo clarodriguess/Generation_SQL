@@ -34,7 +34,6 @@ VALUES
 
 SELECT * FROM tb_tamanhos;
 
-
 CREATE TABLE tb_pizzas(
 	id BIGINT AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,
@@ -46,7 +45,6 @@ CREATE TABLE tb_pizzas(
     FOREIGN KEY (categoria_id) REFERENCES tb_categorias(id),
     FOREIGN KEY (tamanho_id) REFERENCES tb_tamanhos(id)
 );
-
 
 INSERT INTO tb_pizzas (nome, ingredientes, preco, categoria_id, tamanho_id)
 VALUES

@@ -5,7 +5,7 @@ DROP DATABASE db_quitanda;
 CREATE DATABASE db_quitanda;
 
 -- Selecionar o Banco de Dados db_quitanda
-USE db_quitanda;
+USE db_quitanda;	
 
 -- Criar a tabela tb_categorias
 CREATE TABLE tb_categorias(
@@ -140,11 +140,11 @@ SELECT categoria_id, AVG(preco) AS media_preco FROM tb_produtos GROUP BY categor
 SELECT * FROM tb_produtos INNER JOIN tb_categorias 
 ON tb_produtos.categoria_id = tb_categorias.id;
 
--- LEFT JOIN (interccao + dados da tab da esquerda, onde tem a)
+-- LEFT JOIN (intersecao + dados da tab da esquerda)
 SELECT * FROM tb_produtos LEFT JOIN tb_categorias 
 ON tb_produtos.categoria_id = tb_categorias.id;
 
--- RIGHT JOIN (interccao + dados da tab da direita, independente de ter relacao)
+-- RIGHT JOIN (intersecao + dados da tab da direita, independente de ter relacao)
 SELECT * FROM tb_produtos RIGHT JOIN tb_categorias 
 ON tb_produtos.categoria_id = tb_categorias.id;
 
